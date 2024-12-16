@@ -1,0 +1,171 @@
+h1,h5,h4 {
+    color: rgba(73,44,28,255);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: rgba(247,240,211,255);
+}
+
+.mx-5 {
+    width: 30%;
+    height: 30%;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+a {
+    text-decoration: none;
+    color: rgba(73,44,28,255);
+    border-radius: 25px;
+}
+
+td,th{
+    text-align: center;
+}
+
+#ora {
+    background-color: pink;
+    color: rgba(247,240,211,255);
+    border-radius: 25px;
+    transition: 0.3s ease-out;
+}
+
+#ora:hover {
+    background-color: rgba(247,240,211,255);
+    color: pink;
+}
+
+#descrizione {
+    text-align: justify ;
+}
+
+#album {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+  
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.zoomzoom {
+    transition: transform .2s;
+}
+
+.zoomzoom:hover {
+    transform: scale(1.3);
+}
+
+#goblin {
+    background-color: rgba(216,222,238,255);
+}
+
+#igor {
+    background-color: rgba(242,174,197,255);
+}
+
+#call {
+    background-color: rgba(255,255,255,255);
+}
+
+#flower {
+    background-color: rgba(233,153,68,255);
+}
+
+#cherry {
+    background-color: rgba(251,252,255,255);
+}
+
+#wolf {
+background-color: rgb(136,136,83);
+}
+
+.prima {
+    width: 20%;
+}
+
+#iscriviti {
+    background-image: url(../images/sfondo.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.descrizione {
+    display: none;
+}
+
+#personaggi {
+    height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+    .descrizione {
+      display: table-cell;
+    }
+  }
+
+  @media (max-width: 991px){
+    .card .h-100 {
+        margin-bottom: 30px;
+    }
+    #personaggi {
+        height: 600px;
+    }
+    .collab {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #personaggi {
+        height: 500px;
+        
+    }
+    .card .h-100 {
+        padding-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    #personaggi {
+        height: 300px;
+    }
+  }
